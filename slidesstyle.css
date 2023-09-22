@@ -1,0 +1,155 @@
+    .slides{
+      margin-top: 500px;
+    }
+
+    .our_team{
+      background:#0CABA8;
+      justify-content: center;
+      width: 100%;
+      height: fit-content;
+      margin: 0;
+      padding: 10px;
+    }
+    .our_team h1{
+      margin: 20px;
+      text-align: center;
+      justify-content: center;
+      color: #004040;
+      height: 60vh;
+    }
+
+    
+    .wrapper{
+      margin-top: 900px;
+      max-width: 1100px;
+      width: 90%;
+      cursor: pointer;
+      border: none;
+    }
+    
+    .wrapper i {
+      height: 50px;
+      width: 50px;
+      background: #486966;
+      text-align: center;
+      line-height: 50px;
+      border-radius: 50%;
+      cursor: pointer;
+      position: absolute;
+      top: 50%;
+      font-size: 20px;
+      transform: translateY(-50%);
+      box-shadow: 0 3px 3px rgba(0, 0, 0, 0.23);
+     
+    }
+    
+    .wrapper i:first-child{
+      left: -22px;
+    
+    }
+    
+    .wrapper i:last-child{
+      right: -22px;
+      
+    }
+    
+    .wrapper .carousel{
+      display: grid;
+      grid-auto-flow: column;
+      grid-auto-columns: calc((100% / 3) - 0px);
+      gap: 16px;
+      overflow-x: auto;
+      scroll-snap-type: x mandatory;
+      scroll-behavior: smooth;
+      scrollbar-width: 0;
+    }
+    
+    .carousel.no-transition{
+      scroll-behavior: auto;
+    }
+    .carousel.dragging{
+      scroll-snap-type: none;
+      scroll-behavior: auto;
+    }
+    .carousel.dragging.card{
+      cursor: grab;
+      user-select: none;
+    }
+    
+    .carousel::-webkit-scrollbar {
+      display: none;
+    }
+    
+    .carousel :where(.card, .img){
+       
+      align-items:inherit;
+      justify-content: center;
+    
+    }
+    
+    .carousel .card {
+      cursor: pointer;
+      user-select: none;
+    }
+    
+    
+    
+    .carousel .card{
+      scroll-snap-align: start;
+      height: 250px;
+      list-style: none;
+      background: #015958;
+      border-radius: 8px;
+      display: flex;
+      padding-bottom: 15px;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      padding:13px;
+    }
+    
+    
+    .card .img img{
+      width: 170px;
+      height: 170px;
+      object-fit: cover;
+      border-radius: 5%;
+    }
+    .img{
+      display: block;
+      padding: 5px;
+      align-items: center;
+      justify-content: center;
+      text-align: justify;
+    }
+    .img h2{
+      color: rgb(235, 235, 243);
+      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+      font-size: 20px;
+    }
+    
+    .img h3{
+      color: rgb(234, 234, 238);
+      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+      font-size: 17px;
+      text-align: justify;
+    }
+    
+    @media screen and (max-width: 900px){
+      
+    .wrapper .carousel{
+      grid-auto-columns: calc((100%/3 )-9px);
+      
+    }
+    }
+    
+    
+    @media screen and (max-width: 700px){
+      
+      .wrapper .carousel{
+        grid-auto-columns:100%;
+        
+      }
+      }
+      
+    

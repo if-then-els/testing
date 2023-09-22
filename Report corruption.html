@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Report Corruption</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-image:linear-gradient(rgba(3, 12, 48, 0.7), rgba(3, 14, 58, 0.7)),  url('Photos/block.png');
+            margin: 0;
+            padding: 0;
+        }
+        
+        header {
+            background-color: #0918e2;
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+        }
+        
+        h1 {
+            margin: 0;
+        }
+        
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        }
+        
+        .report-form {
+            margin: 20px 0;
+        }
+        
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        
+        input[type="text"],
+        textarea {
+            width: 90%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+        }
+        
+        input[type="radio"] {
+            margin-right: 5px;
+        }
+        
+        button[type="submit"] {
+            background-color: #020344;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 3px;
+            cursor: pointer;
+        }
+        
+        button[type="submit"]:hover {
+            background-color: #03044d;
+        }
+    </style>
+</head>
+<body>
+    <nav class="nav-links">
+        <input type="checkbox" id="check">
+        <label for="check" class="checkbtn">
+          <i class="fa-solid fa-bars" style="color: #000361;"></i>
+        </label> 
+       
+        <ul class="navbar">
+            <li><a href="CHK HTML.html">Home</a></li>
+            <!--Dropdown menu (About Dropdown menu)-->
+            <li class="dropdown">
+              <a href="About page.html">About</a>
+              <ul class="dropdown-menu">
+                <li class="drop2">
+                  <a href="#">Management</a>
+                  <ul class="drop-2">
+                    <li><a href="#">B.O.G</a></li>
+                    <li><a href="#">Health Management</a></li>
+                  
+                   
+                  </ul>
+                </li>
+                <li class="drop2">
+                
+                  <ul class="drop-2">
+                      <li><a href="Clinical Services.html" target="_blank">Clinical Services</a></li>
+                      <li><a href="#">Coporate services</a></li>
+                  </ul>
+              </li>
+               
+                <!--nested dropdown menu-->
+               
+              </li>
+                <li><a href="careers.html" target="_blank">Careers</a></li>
+               
+              </ul>
+            </li>
+            <!--Our Services dropdown menu-->
+            <li class="dropdown">
+              <a href="Clinical Services.html" target="_blank">Our Services</a>
+             
+            </li>
+   <!--Projects dropdown menu-->
+            <li class="dropdown">
+              <a href="Projects.html">Projects</a>
+           
+            </li>
+             <!--Branches dropdown menu-->
+             <li class="dropdown">
+              <a href="#">Branches</a>
+              <ul class="dropdown-menu">
+                <li><a href="Kibugua Branch.html" target="_blank">Kibugua</a></li>
+                <li><a href="Makima.html" target="_blank">Makima</a></li>
+               
+              </ul>
+            </li>
+            <!--Media Center dropdown menu-->
+            <li class="dropdown">
+              <a href="media center.html" target="_blank">Media Center</a>
+              <ul class="dropdown-menu">
+                <li><a href="#news">Newsline</a></li>
+                <li><a href="#blog">Gallery</a></li>
+                <li><a href="#gallery">Blog</a></li>
+           
+              </ul>
+            </li>
+             <!--downloads dropdown menu-->
+             <li class="dropdown">
+              <a href="#">Downloads</a>
+              <ul class="dropdown-menu">
+                <li><a href="careers.html">Application Letter</a></li>
+                <li><a href="tenders.html" target="_blank">Tenders</a></li>
+                <li><a href="Doctors Center.html">Appointments</a></li>
+              </ul>
+            </li>
+              <!--Fidenza dropdown menu-->
+              <li class="dropdown">
+                  <a href="Fidenza School of Nursing.html" target="_blank">Fidenza</a>
+                  <ul class="dropdown-menu">
+                    <li><a href="Fidenza School of Nursing.html" target="_blank">Application Letter</a></li>
+                    <li><a href="Fidenza School of Nursing.html" target="_blank">Management</a></li>
+                    <li><a href="Fidenza School of Nursing.html" target="_blank">School Gallery</a></li>
+                  </ul>
+                </li>
+                
+            <!--contact us dropdown menu-->
+            <li class="dropdown">
+              <a href="#">Contact Us</a>
+              <ul class="dropdown-menu">
+                <li><a href="FAQ.html" target="_blank">Frequently asked questions</a></li>
+                <li><a href="Report corruption.html" target="_blank">Report Corruption</a></li>
+                <li><a href="contact.html" target="_blank">Contact Us</a></li>
+                
+                <li><a href="comments.html" target="_blank">Comment on Our Services</a></li>
+              </ul>
+            </li>
+           
+          </ul>
+          
+          
+        </nav>
+
+    <header>
+        <h1>Report Corruption</h1>
+    </header>
+    <div class="container">
+        <form class="report-form" action="submit_report.php" method="post">
+            <label for="report-type">Report Type:</label>
+            <input type="radio" name="report-type" value="anonymous" id="anonymous"> <label for="anonymous">Anonymous</label>
+            <input type="radio" name="report-type" value="open" id="open"> <label for="open">Open</label>
+            
+            <label for="report-description">Report Description:</label>
+            <textarea name="report-description" id="report-description" rows="4" placeholder="Describe the corruption..."></textarea>
+            
+            <label for="contact-info">Contact Information (Optional):</label>
+            <input type="text" name="contact-info" id="contact-info" placeholder="Email or phone number">
+            
+            <button type="submit">Submit Report</button>
+        </form>
+    </div>
+</body>
+</html>

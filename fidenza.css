@@ -1,0 +1,146 @@
+.school_managemnt{
+    height: 60vh;
+}
+.school_managemnt h1{
+
+    margin: 20px;
+    padding-bottom: 20px;
+    color: white;
+}
+
+
+
+/* Fidenza School of nursing page styles*/
+.fidenza_school_of_nursing{
+    background-size: cover;
+    height: 30vh;
+  }
+  
+  .fidenza_body{
+    background-image:linear-gradient(rgba(3, 12, 48, 0.7), rgba(3, 14, 58, 0.7)), url(Photos/Fidenza.jpg);
+    background-size:cover;
+    background-position:center;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-attachment: fixed;
+    width: 100%;
+    overflow-x: hidden;
+    background-color: white;
+    height: 100%;
+  }
+  .fidenza_history{
+  margin-bottom: 5px;
+  margin-top: 0;
+  
+  }
+  .school_history{
+    box-sizing: content-box;
+    box-shadow: #020249;
+    background-color: #eeeff1;
+    text-align: center;
+    justify-content: left;
+    margin-top: 20px;
+    padding: 30px;
+    color: #040352;
+    
+  }
+  .courses_offered{
+    text-align: left;
+   justify-content: center;
+   padding-left: 40%;
+  }
+  
+  .application_letter{
+    background-color: none;
+    border-radius: 5px;
+    color: white;
+    padding: 7px;
+    margin-top: 20px;
+    transition: 0.3s;
+  }
+  
+  .application_letter:hover{
+   background-color: #1511e9;
+   color: white;
+  }
+  .school_managemnt{
+    text-align: center;
+    background: #145eff;
+   padding: 30px;
+   color: white;
+  }
+  
+  .school_gallery{
+    text-align: center;
+   background-image:linear-gradient(rgba(3, 12, 48, 0.7), rgba(3, 14, 58, 0.7)), url(Photos/teller.JPG);
+   color: white;
+   padding: 30px;
+   background-position: center;
+   background-position: cover ;
+   
+  }
+  
+  
+  
+  /* Login Form*/
+  
+  .login_form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    width: 100%;
+  
+  }
+  .form_box{
+    position: relative;
+    width: 400px;
+    height: 450px;
+    background: red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .log_in{
+    font-size: 2em;
+    color: white;
+    text-align: center;
+  
+  }
+  .inputbox{
+    position: relative;
+    margin: 30px 0;
+    width: 310px;
+    border-radius: 2px solid #fff;
+  }
+  .inputbox label{
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    transform: translateY(-50%);
+    color: #fff;
+    font-size: 1em;
+    pointer-events: none;
+    transition: .5s;
+  }
+  input:focus  label,
+  input:focus :valid{
+   top: 5px;
+  }
+  .inputbox input{
+    width: 100%;
+    height: 50px;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 1em;
+    padding: 35px 0 5px;
+  
+  }
+  .inputbox fa-solid {
+    position: absolute;
+    right: 8px;
+  }
+  
+  

@@ -1,0 +1,80 @@
+/* Reset some default browser styles */
+body, h1, h2 {
+    margin: 0;
+    padding: 0;
+    color: rgb(1, 18, 36);
+  }
+ header,h1{
+    color: #fff;
+    background-color: darkblue;
+ }
+
+  body{
+    background-image:linear-gradient(rgba(3, 12, 48, 0.7), rgba(3, 14, 58, 0.7)),  url('Photos/block.png');
+    
+  }
+  
+  /* Define some basic styles for the header */
+  header {
+    background-color: darkblue;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+  }
+  
+  /* Style the main container */
+  .container {
+    max-width: 800px;
+    margin: 10%;
+    padding: 20px;
+    background-color: #fff;
+  }
+  
+  /* Style the contact details section */
+  .contact-details {
+    margin-top: 20px;
+  }
+  
+  .contact-item {
+    margin-bottom: 10px;
+  }
+  
+  .contact-icon {
+    font-size: 20px;
+    margin-right: 10px;
+  }
+  
+  /* Style the contact form */
+  form {
+    margin-top: 20px;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+  
+  input[type="text"],
+  input[type="email"],
+  textarea {
+    width: 98%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  button[type="submit"] {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  button[type="submit"]:hover {
+    background-color: #555;
+  }
+  

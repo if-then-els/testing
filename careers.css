@@ -1,0 +1,59 @@
+/* styles.css */
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    background-image:linear-gradient(rgba(3, 12, 48, 0.7), rgba(3, 14, 58, 0.7)),  url('Photos/maternity2.JPG');
+  }
+  
+  h1 {
+    text-align: center;
+    background-color: #04012c;
+    color: #fff;
+    padding: 20px;
+    margin: 0;
+  }
+  
+  table {
+    width: 80%;
+    margin: 20px auto;
+    margin-bottom: 0;
+    border-collapse: collapse;
+    background-color: #fff;
+    box-shadow: 0px 0px 10px rgba(11, 2, 61, 0.418);
+  }
+  
+  table th, table td {
+    padding: 10px;
+    text-align: center;
+    border: 1px solid #ccc;
+  }
+  
+  table th {
+    background-color: #0e55da;
+    color: #fff;
+  }
+  
+  table tbody tr:nth-child(even) {
+    background-color: #f2f2f2;
+  }
+  
+  table tbody tr:hover {
+    background-color: #ddd;
+  }
+  .after_table p{
+    color: #17044b;
+    text-align: center;
+    justify-content: center;
+    background-color: #ddd;
+    width: 78%;
+    margin-left: 120px;
+    margin-right: 80px;
+    margin-top: 0;
+    margin-bottom: 20px;
+    padding: 20px;
+    position: relative;
+
+  }  

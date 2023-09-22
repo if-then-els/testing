@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CHK Partners</title>
+   
+    <style>
+        body {
+          background-image:linear-gradient(rgba(3, 12, 48, 0.7), rgba(3, 14, 58, 0.7)),  url('Photos/gateA.JPG');
+           background-size: cover;
+           background-position: fixed;
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+         
+            max-width: 1200px;
+            margin-left: 120px;
+            padding: 20px;
+           
+        }
+
+        .logo-box {
+            display: inline-block;
+            width: 200px;
+            height: 150px;
+            margin: 10px;
+            background-color: #fff;
+            border: 1px solid #ddd;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            padding: 20px;
+            transition: transform 0.3s ease;
+        }
+
+        .container h1{
+          text-align: center;
+          color: rgb(255, 255, 255);
+        }
+
+        .logo-box:hover {
+            transform: scale(1.05);
+        }
+
+        .logo {
+            max-width: 100%;
+            max-height: 100%;
+        }
+
+        /* nav bar styling*/
+nav {
+  margin-top: 0;
+    background-color: #2a6dff;
+  height: 100px;
+  text-align:justify;
+  
+  
+}
+  
+  
+  nav ul {
+    list-style-type:none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+  justify-content: center;
+  vertical-align: top;
+  }
+  
+  nav li {
+    padding: 0 15px;
+    line-height:40px;
+    margin-top: 25px;
+  }
+  
+  nav li a {
+    color: #fdfdfd;
+    text-decoration: none;
+    font-size: 18px;
+ font-weight: lighter;
+    font-family: Arial, Helvetica, sans-serif;
+    transition: 0.3s;
+  }
+  
+  nav li a:hover {
+    color: #030e49;
+    transition: 0.3s;
+    font-size: 15px;
+  }
+  
+  /* dropdown menu styling*/
+  .dropdown:hover .dropdown-menu {
+    display: block;
+    transition: ease-in;
+    font-size: 10px;
+    text-decoration:wavy;
+    box-shadow: -3px -3px 2px rgba(28, 2, 90, 0.452),
+    5px 5px 5px    rgba(0, 0, 0, 0.2), 
+    15px 15px 15px    rgba(0, 0, 0, 0.2);
+    animation:alternate ;
+    
+  }
+
+  .dropdown-menu {
+    display: none;
+    position: absolute;
+    z-index: 1;
+    background-color: #145eff;
+    transition: 3;
+  }
+  
+  .dropdown-menu li {
+    display: block;
+    width: 100%;
+  }
+  /* nested dropdownmenu */
+  .drop2:hover .drop-2 {
+    display: inline-block;
+    transition: 3s;
+    font-size: 10px;
+    box-shadow: -3px -3px 2px rgba(28, 2, 90, 0.452),
+    5px 5px 5px    rgba(0, 0, 0, 0.2), 
+    15px 15px 15px    rgba(0, 0, 0, 0.2);
+
+    
+    
+  }
+  .drop-2 {
+    display: none;
+    position:fixed;
+    z-index: 1;
+    background-color: #2a6dff;
+    transition: 3;
+  }
+  
+    </style>
+</head>
+<body>
+
+  <nav class="nav-links">
+    <input type="checkbox" id="check">
+    <label for="check" class="checkbtn">
+      <i class="fa-solid fa-bars" style="color: #000361;"></i>
+    </label> 
+   
+    <ul class="navbar">
+        <li><a href="CHK HTML.html">Home</a></li>
+        <!--Dropdown menu (About Dropdown menu)-->
+        <li class="dropdown">
+          <a href="About page.html">About</a>
+          <ul class="dropdown-menu">
+            <li class="drop2">
+              <a href="#">Management</a>
+              <ul class="drop-2">
+                <li><a href="#">B.O.G</a></li>
+                <li><a href="#">Health Management</a></li>
+              
+               
+              </ul>
+            </li>
+            <li class="drop2">
+            
+              <ul class="drop-2">
+                  <li><a href="Clinical Services.html" target="_blank">Clinical Services</a></li>
+                  <li><a href="#">Coporate services</a></li>
+              </ul>
+          </li>
+           
+            <!--nested dropdown menu-->
+           
+          </li>
+            <li><a href="careers.html" target="_blank">Careers</a></li>
+           
+          </ul>
+        </li>
+        <!--Our Services dropdown menu-->
+        <li class="dropdown">
+          <a href="Clinical Services.html" target="_blank">Our Services</a>
+         
+        </li>
+<!--Projects dropdown menu-->
+        <li class="dropdown">
+          <a href="Projects.html">Projects</a>
+       
+        </li>
+         <!--Branches dropdown menu-->
+         <li class="dropdown">
+          <a href="#">Branches</a>
+          <ul class="dropdown-menu">
+            <li><a href="Kibugua Branch.html" target="_blank">Kibugua</a></li>
+            <li><a href="Makima.html" target="_blank">Makima</a></li>
+           
+          </ul>
+        </li>
+        <!--Media Center dropdown menu-->
+        <li class="dropdown">
+          <a href="media center.html" target="_blank">Media Center</a>
+          <ul class="dropdown-menu">
+            <li><a href="#news">Newsline</a></li>
+            <li><a href="#blog">Gallery</a></li>
+            <li><a href="#gallery">Blog</a></li>
+       
+          </ul>
+        </li>
+         <!--downloads dropdown menu-->
+         <li class="dropdown">
+          <a href="#">Downloads</a>
+          <ul class="dropdown-menu">
+            <li><a href="careers.html">Application Letter</a></li>
+            <li><a href="tenders.html" target="_blank">Tenders</a></li>
+            <li><a href="Doctors Center.html">Appointments</a></li>
+          </ul>
+        </li>
+          <!--Fidenza dropdown menu-->
+          <li class="dropdown">
+              <a href="Fidenza School of Nursing.html" target="_blank">Fidenza</a>
+              <ul class="dropdown-menu">
+                <li><a href="Fidenza School of Nursing.html" target="_blank">Application Letter</a></li>
+                <li><a href="Fidenza School of Nursing.html" target="_blank">Management</a></li>
+                <li><a href="Fidenza School of Nursing.html" target="_blank">School Gallery</a></li>
+              </ul>
+            </li>
+            
+        <!--contact us dropdown menu-->
+        <li class="dropdown">
+          <a href="#">Contact Us</a>
+          <ul class="dropdown-menu">
+            <li><a href="FAQ.html" target="_blank">Frequently asked questions</a></li>
+            <li><a href="Report corruption.html" target="_blank">Report Corruption</a></li>
+            <li><a href="contact.html" target="_blank">Contact Us</a></li>
+            
+            <li><a href="comments.html" target="_blank">Comment on Our Services</a></li>
+          </ul>
+        </li>
+       
+      </ul>
+      
+      
+    </nav>
+
+    <div class="container">
+        <h1>Our Partners</h1>
+        <div class="logo-box">
+          <a href="https://www.nhif.or.ke/" target="_blank">
+            <img class="logo" src="https://www.nhif.or.ke/wp-content/uploads/2020/11/NHIF-Logo-Transparent.png" alt="Insurance Company 1">
+        </div>
+        </a>
+        <div class="logo-box">
+          <a href="https://www.memorialkenya.com/" target="_blank">
+            <img class="logo" src="https://www.memorialkenya.com/wp-content/uploads/2020/06/Madison-Insurance-Company-Kenya.png" alt="Insurance Company 2">
+       </a>
+          </div>
+        <div class="logo-box">
+
+         <a href="https://equitygroupholdings.com/ke/" target="_blank">
+            <img class="logo" src="https://s3.amazonaws.com/external_clips/attachments/1486176/original/open-uri20171013-1670-663i5o?1507886594" alt="Insurance Company 3"  >
+       </a>
+          </div>
+        <!-- Add more logo-box divs with your insurance company logos -->
+        <div class="logo-box">
+          <a href="https://commons.wikimedia.org/wiki/Main_Page" target="_blank">
+            <img class="logo" src="https://satyughealthcare.com/uploads/insurance/147750716833.png" alt="Insurance Company 1">
+        </div>
+        </a>
+        <div class="logo-box">
+          <a href="https://www.memorialkenya.com/" target="_blank">
+            <img class="logo" src="https://netstorage-tuko.akamaized.net/images/e95d46292805b9d6.png" alt="Insurance Company 2">
+       </a>
+          </div>
+        <div class="logo-box">
+
+         <a href="https://recruitmentfile.net/" target="_blank">
+            <img class="logo" src="https://i0.wp.com/recruitmentfile.net/wp-content/uploads/2022/09/KenGen-Recruitment.png" alt="Insurance Company 3"  >
+       </a>
+          </div>
+
+
+          <div class="logo-box">
+            <a href="https://www.nhif.or.ke/" target="_blank">
+              <img class="logo" src="https://pbs.twimg.com/profile_images/1634221023322341381/dYH6diEs_400x400.jpg" alt="Insurance Company 1">
+          </div>
+          </a>
+          <div class="logo-box">
+            <a href="https://www.memorialkenya.com/" target="_blank">
+              <img class="logo" src="https://www.memorialkenya.com/wp-content/uploads/2020/06/Madison-Insurance-Company-Kenya.png" alt="Insurance Company 2">
+         </a>
+            </div>
+          <div class="logo-box">
+  
+           <a href="https://equitygroupholdings.com/ke/" target="_blank">
+              <img class="logo" src="https://s3.amazonaws.com/external_clips/attachments/1486176/original/open-uri20171013-1670-663i5o?1507886594" alt="Insurance Company 3"  >
+         </a>
+            </div>
+
+            <div class="logo-box">
+              <a href="https://www.memorialkenya.com/" target="_blank">
+                <img class="logo" src="https://www.memorialkenya.com/wp-content/uploads/2020/06/Madison-Insurance-Company-Kenya.png" alt="Insurance Company 2">
+           </a>
+              </div>
+            <div class="logo-box">
+    
+             <a href="https://equitygroupholdings.com/ke/" target="_blank">
+                <img class="logo" src="https://s3.amazonaws.com/external_clips/attachments/1486176/original/open-uri20171013-1670-663i5o?1507886594" alt="Insurance Company 3"  >
+           </a>
+              </div>
+
+              <div class="logo-box">
+                <a href="https://www.nhif.or.ke/" target="_blank">
+                  <img class="logo" src="https://www.nhif.or.ke/wp-content/uploads/2020/11/NHIF-Logo-Transparent.png" alt="Insurance Company 1">
+              </div>
+              </a>
+    </div>
+</body>
+</html>

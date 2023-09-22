@@ -1,0 +1,951 @@
+::-webkit-scrollbar-button{
+  border-radius: 5px;
+  color: #145eff;
+}
+
+/* body style (background)*/
+body {
+
+  background-size:cover;
+  background-position:center;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-attachment: fixed;
+  width: 100%;
+  overflow-x: hidden;
+  background-color: white;
+  
+}
+
+/* navbar response */
+
+/* styles.css */
+
+/* Your existing CSS styles here */
+
+/* Ensure the background covers the whole viewport */
+.sliding-background {
+  background-size: cover;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+/* Define the animation */
+@keyframes slide {
+  0% {
+      background-position: 100% 0;
+      /* Add your first background image URL here */
+      background-image:linear-gradient(rgba(3, 12, 48, 0.7), rgba(3, 14, 58, 0.7)),  url('Photos/gateA.JPG');
+  }
+  20% {
+    background-position: 100% 0;
+    /* Add your first background image URL here */
+    background-image:linear-gradient(rgba(3, 12, 48, 0.7), rgba(3, 14, 58, 0.7)),  url('Photos/ICU.JPG');
+}
+40% {
+  background-position: 100% 0;
+  /* Add your first background image URL here */
+  background-image:linear-gradient(rgba(3, 12, 48, 0.7), rgba(3, 14, 58, 0.7)),  url('Photos/block.png');
+}
+80% {
+  background-position: 100% 0;
+  /* Add your first background image URL here */
+  background-image:linear-gradient(rgba(3, 12, 48, 0.7), rgba(3, 14, 58, 0.7)),  url('Photos/fidezag3.JPG');
+}
+  100% {
+      background-position: 0 0;
+      /* Add your second background image URL here */
+      background-image:linear-gradient(rgba(3, 12, 48, 0.7), rgba(3, 14, 58, 0.7)),  url('Photos/maternity2.JPG');
+  }
+}
+
+/* Apply the animation to the background */
+.sliding-background {
+  animation: slide 20s infinite linear; /* Adjust the duration to control the speed */
+  animation-fill-mode: forwards; /* Keeps the background image at its final state after the animation */
+}
+
+
+/* Set default styles for all screen sizes */
+body {
+  font-size: 16px;
+
+}
+
+.home-head{
+  font-weight: bolder;
+  text-align: center;
+  margin-top: 200px;
+  font-size: 50px;
+  color: #fdfdfd;
+  transition: 0.3s;
+  text-decoration:sienna;
+  animation: slide-in 1.6s ease-out;
+}
+
+   @keyframes slide-in {
+    0% {
+      transform: translateX(200%);
+    }
+    100% {
+      transform: translateX(0);
+    }
+   }
+
+.title:hover {
+  color: #145eff;
+  cursor: pointer;
+  font-size: 45px;
+  transition: 0.3s;
+}
+
+.title2{
+  font-weight: bold;
+  text-align: center;
+  margin-top: 20px;
+  font-size: 20px;
+  color: #eeeef3;
+  transition: 0.3s;
+  animation: slide-in 1.5s ease-out;
+  
+} 
+/* nav bar styling*/
+nav {
+  margin-top: 0;
+    background-color: #2a6dff;
+  height: 100px;
+  text-align:justify;
+  
+  
+}
+  
+  .logo{
+    float: left;
+    margin: 20px;
+   margin-top: 20px;
+    background-image: linear-gradient(135deg, #8f7bff, #1511f5);
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s, box-shadow 0.3s;
+    display: block;
+    
+  }
+  nav ul {
+    list-style-type:none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+  justify-content: center;
+  vertical-align: top;
+  }
+  
+  nav li {
+    padding: 0 15px;
+    line-height:40px;
+    margin-top: 25px;
+  }
+  
+  nav li a {
+    color: #fdfdfd;
+    text-decoration: none;
+    font-size: 18px;
+ font-weight: lighter;
+    font-family: Arial, Helvetica, sans-serif;
+    transition: 0.3s;
+  }
+  
+  nav li a:hover {
+    color: #030e49;
+    transition: 0.3s;
+    font-size: 15px;
+  }
+  
+  /* dropdown menu styling*/
+  .dropdown:hover .dropdown-menu {
+    display: block;
+    transition: ease-in;
+    font-size: 10px;
+    text-decoration:wavy;
+    box-shadow: -3px -3px 2px rgba(28, 2, 90, 0.452),
+    5px 5px 5px    rgba(0, 0, 0, 0.2), 
+    15px 15px 15px    rgba(0, 0, 0, 0.2);
+    animation:alternate ;
+    
+  }
+
+  .dropdown-menu {
+    display: none;
+    position: absolute;
+    z-index: 1;
+    background-color: #145eff;
+    transition: 3;
+  }
+  
+  .dropdown-menu li {
+    display: block;
+    width: 100%;
+  }
+  /* nested dropdownmenu */
+  .drop2:hover .drop-2 {
+    display: inline-block;
+    transition: 3s;
+    font-size: 10px;
+    box-shadow: -3px -3px 2px rgba(28, 2, 90, 0.452),
+    5px 5px 5px    rgba(0, 0, 0, 0.2), 
+    15px 15px 15px    rgba(0, 0, 0, 0.2);
+
+    
+    
+  }
+  .drop-2 {
+    display: none;
+    position:fixed;
+    z-index: 1;
+    background-color: #2a6dff;
+    transition: 3;
+  }
+  /* page divs*/
+  .page-div {
+    background-color: #fdfdfd;
+    width: 100%;
+    height:fit-content;
+    text-align: center;
+    padding: 10px;
+    color: #040352;
+    display: block;
+    margin-top:200px;
+    font-size:18px;
+    font-weight: 200;
+  }
+  .div-headers{
+    color: #040352;
+    display: block;
+  }
+  .surgical{
+    color: #5c8aee;
+    display: inline-block;
+    justify-content: space-between;
+   width: 330px;
+    margin-top: 15px;
+    vertical-align: top;
+    
+  }
+button{
+  color: white;
+  background-color: #040352;
+  padding: 6px;
+  border: none;
+ transition: 0.3s;
+}
+button:hover{
+  color: white;
+  background-color: #2a6dff;
+  padding: 6px;
+  border: none;
+  scale: 90%;
+ 
+}
+.icon {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  background-image: url("D:\CODING\Kyeni website\Html Code\Photos\Surgical Icon");
+  background-repeat: no-repeat;
+  background-size: contain;
+  margin-right: 10px;
+}
+.SB{
+  color: white;
+  background-color: #1511e9;
+  padding: 6px;
+  border-radius:none;
+  border: none;
+  margin-top: 15px;
+  transition: 0.3s;
+}
+.SB:hover{
+  color: rgb(11, 103, 241);
+  background-color: #ededf1;
+  padding: 6px;
+  border-radius:none;
+  border: none;
+  cursor: pointer;
+  scale: 90%;
+  transition: 0.3s;
+}
+/* page div 2 */
+.page-div2 {
+  background-color: #209cf0;
+  width: 100%;
+  height:110%;
+  text-align: center;
+  padding: 10px;
+  color: #ffffff;
+  display: block;
+  font-size:18px;
+  font-weight: 200;
+  
+}
+/* our team home page*/
+.ourteam{
+  height: 100%;
+}
+/* Image gallery styles */
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-gap: 10px;
+  padding: 20px;
+}
+
+.gallery-item {
+  position: relative;
+  overflow: hidden;
+
+ 
+}
+
+.gallery-item img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 8px;
+  transition: transform 0.3s ease;
+}
+
+.gallery-item img:hover {
+  transform: scale(1.1);
+}
+
+
+
+/* Optional: Add some styling to create a border around images on hover */
+
+
+/* our facilty*/
+.wrapper{
+  border: 1px solid white;
+  position: absolute;
+  width: 100%;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+  display: flex;
+}
+
+
+/*About Our Facility Styles */
+.facility-texts{
+  font-weight: bold;
+  font-size: 17px;
+}
+.fa-light{
+  width: 200px;
+  height: 150px;
+}
+.menu{
+  cursor: pointer;
+  display: inline-block;
+  margin-left: 30px;
+  
+}
+
+/*home page partners section*/
+.partners_home_page{
+  vertical-align: top;
+  display: flex;
+  flex-basis: content;
+   height: 100%;
+  padding: 30px;
+  color: rgb(1, 4, 37);
+  background-color: #f5f4f8;
+  height: 100%;
+  width: 100%;
+  text-align: center;
+  justify-content: center;
+
+}
+.our-partner-h1{
+  position: absolute;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+.slide_content{
+  margin: 40px 40px;
+  padding: 30px;
+
+}
+.card_image{
+  position: relative;
+  width: 200px;
+  height: 500px;
+  justify-content: center;
+}
+
+.card{
+   border-radius: 25px;
+   background-color: transparent;
+   justify-content: center;
+   height: 70px;
+ 
+
+}
+
+.card_image .card_img{
+   text-align: center;
+  height: fit-content;
+  width: fit-content;
+  object-fit: cover;
+  border-radius: 10px;
+  border: 4px solid #4070f4;
+  
+  
+}
+.slide_container{
+ 
+  text-align: center;
+  max-width: 1120px;
+  width: 100%;
+  padding: 70px 0;
+  justify-content: center;
+  display: flex;
+
+}
+
+
+.set-search{
+  display: block;
+}
+.search{
+  position:absolute;
+  float: left;
+  top: 0;
+  right: 0;
+  
+  background: #04024e;
+  height: 40px;
+  border-radius: 40px;
+  padding: 5px;
+  margin-top: 110px;
+  margin-right: 50px;
+  
+}
+.search:hover > .search-txt{
+  width: 240px;
+  padding: 0 6px;
+}
+.search:hover > .search-btn{
+  background: #2172ff;
+  transition: 0.4s;
+}
+.search-btn{
+  color: #f0f0f0;
+  float: left;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: #04024e;
+  display: flex;
+  justify-content:center;
+  align-items: center;
+}
+.search-txt{
+  border: none;
+  background: none;
+  outline: none;
+  float: left;
+  padding: 0;
+  color: white;
+  font-size: 16px;
+  transition: 0.4s;
+  line-height: 40px;
+  width: 0px;
+
+}
+.checkbtn{
+  font-size: 30px;
+  float:right;
+  line-height: 80px;
+  cursor: pointer;
+  margin-top:5px ;
+  margin-right: 10px;
+  display: none;
+}
+#check{
+  display: none;
+}
+.number{
+  color: white;
+}
+/* RESPONSIVE*/
+@media(max-width:1000px){
+  
+  .home-head{
+  font-size: 30px;
+ }
+ .search{
+  size: 10px;
+  height: 20px;
+
+ }
+ .search-btn{
+  size: 10px;
+  height: 20px;
+  width: auto;
+ }
+ 
+  .fa-solid fa-bars{
+    width:fit-content ;
+    padding-right: 20px;
+  }
+ 
+  .home-head{
+  font-size: 30px;
+}
+nav ul li a{
+  font-size: 10px;
+ 
+}
+}
+@media (max-width: 1000px){
+  .checkbtn{
+    display: block;
+    top: 0;
+  }
+  ul {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: #030e49;
+    top: 0;
+    left: -100%;
+    text-align: center;
+    float: right;
+    transition: all .5s;
+    
+  }
+  #checkbtn:checked {
+    left: 100;
+  }
+ nav ul li {
+    display: block;
+  }
+  nav li a:hover {
+    font-size: 7px;
+  }
+  nav ul{
+    display: block;
+  }
+  .dropdown-menu li{
+    display: flex;
+    float: left;
+    max-width: 25%;
+  }
+}
+@media (max-width: 1000px){
+ .footer{
+  width: fit-content;
+  overflow: hidden;
+  display: block;
+ }
+}
+
+
+  
+
+@media (max-width: 1000px){
+ body{
+  background-image: linear-gradient(rgba(3, 12, 48, 0.7), rgba(3, 14, 58, 0.7)),url(Photos/block.png); 
+  background-size: cover;
+  overflow-x: hidden;
+  width: 100%;
+
+  
+}
+}
+@media (max-width: 1000px){
+::-webkit-scrollbar-button{
+  border-radius: 5px;
+  color: #145eff;
+}
+}
+
+@media (max-width: 1000px){
+  .our-team-images{
+   height: fit-content;
+   width: fit-content;
+  display: block;
+  }
+  
+}
+@media (max-width: 1000px){
+.surgical{
+  font-size: 10px;
+  display: block;
+  text-align: center;
+  width: fit-content;
+  height: fit-content;
+  overflow-x: hidden;
+  padding: 10 10px;
+}
+}
+
+  @media (max-width: 1000px){
+   .photos {
+      width: 30px;
+      height: 80px;
+    }
+  }
+  @media (max-width: 1000px){
+    .facility{
+      font-size: 10px;
+      display: block;
+      
+    }
+    .our-partners{
+      width: 90%;
+      overflow: hidden;
+      display:block;
+      height: fit-content;
+    }
+    .photos{
+      width: fit-content;
+      display: flex;
+      flex-direction: column;
+    }
+    }
+
+
+/* About Page Styling*/
+.About-page{
+  width:100%;
+  margin: auto;
+  text-align: center;
+  padding-top: 100px;
+ margin-top: 30px;
+  background-size:cover;
+  background-position:center;
+  background: rgb(206, 207, 207);
+}
+.about-text{
+  font-size: 36px;
+  font-weight: 600;
+
+}
+
+.row{
+  margin-top: 5%;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  
+}
+.history-col{
+  flex-basis: 25%;
+  background: #abafae;
+  border-radius: 10px;
+  margin-bottom: 5%;
+  padding: 50px 12px;
+  box-sizing: border-box;
+  margin: 20px;
+  transition: 0.5s;
+}
+h3{
+  text-align: center;
+  font-weight: 600;
+  margin: 10px 0;
+}
+.history-col:hover{
+  box-shadow: 0 0 20px 0px #196774;
+  cursor:zoom-in;
+}
+/* Media for About-page*/
+@media(max-width: 700px){
+  .row{
+    flex-direction: column;
+
+  }
+}
+
+
+/* footer */
+.footer{
+  background-color:#0e0238;
+  text-align: center;
+  color: rgb(234, 237, 243);
+  width: 100%;
+  height: 100%;
+  padding: 30px;
+  display: inline-block;
+  overflow: hidden;
+  margin-top: 0;
+  font-size: 9px;
+  
+}
+.contact_footer{
+  display: inline-block;
+  justify-content: space-between;
+  text-align: left;
+  padding: 10px  10px;
+  margin: 20px 20px;
+  flex-basis: 30%;
+}
+.contact_footer p {
+font-weight: bold;
+font-style: italic;
+font-size: 12px;
+}
+.contact_footer h4{
+  font-weight: bolder;
+  font-size: large;
+  font-size: 12px;
+}
+
+.mentions{
+  font-size: 4px;
+}
+
+/* About page */
+
+.historysection{
+  max-width: 200px;
+  color: #020249;
+ 
+}
+
+
+.about-page {
+width: 100%;
+margin: auto;
+text-align: center;
+padding-top:20px ;
+background-color: #abafae;
+
+}
+.about-col{
+  flex-basis: 31%;
+  border-radius: 10px;
+  margin-bottom: 30px;
+  text-align: left;
+  position: relative;
+  overflow: hidden;
+  
+
+}
+
+.about-col img {
+  width: 100%;
+  border-radius: 10px;
+}
+.vision{
+  background: transparent;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: white;
+  text-align: center;
+  transition: 0.5s;
+  border-radius: 10px;
+}
+.vision:hover{
+     background: rgba(226, 0, 0,0.7);
+}
+.vision h1{
+  width: 100%;
+  font-weight: 500;
+  color: #ffffff;
+  font-size: 26px;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  position: absolute;
+  opacity: 0;
+  transition: 0.5s;
+
+}
+
+
+.vision p{
+opacity: 0;
+transition: 0.5s;
+transform: translateY(-50%);
+position: absolute;
+bottom: 0;
+}
+
+.vision:hover h1{
+opacity: 1;
+bottom: 70%;
+}
+.vision:hover p{
+  opacity: 1;
+  bottom: 25%;
+}
+
+.mission p{
+  opacity: 0;
+transition: 0.5s;
+transform: translateY(-10%);
+position: absolute;
+bottom: 0;
+text-align: justify;
+padding: 8px;
+}
+.mission2 p{
+  opacity: 0;
+transition: 0.5s;
+transform: translateY(-10%);
+position: absolute;
+bottom: 0;
+text-align: justify;
+padding-left: 20%;
+}
+.mission:hover p{
+  opacity: 1;
+  bottom: 5%;
+}
+.history{
+  padding: 30px 30px;
+  background-color: #b0bee9;
+  color: #020249;
+  display: block;
+}
+.history h1{
+  color: #145eff;
+}
+
+.about-page{
+  display: block;
+}
+/*---project_page*/
+.projects{
+  width: 100%;
+  margin: auto;
+  text-align: center;
+  padding-top: 10px;
+  background-color: #efeff1;
+}
+.project-col{
+  flex-basis: 32%;
+  border-radius: 10px;
+  margin-bottom: 30px;
+  position: relative;
+  overflow: hidden;
+ 
+}
+
+.project-col img{
+  margin-left: 30px;
+  width: 100%;
+  border-radius: 10px;
+  margin-right: 30px;
+  display: block;
+}
+.layer{
+  background:transparent;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: 0.5s;
+  margin-left: 30px;
+  border-radius: 10px;
+}
+.layer:hover{
+  background: rgba(226, 0 , 0, 0.7);
+  cursor: pointer;
+}
+.layer h3{
+  width: 100%;
+  font-size: 500;
+  color: #fff;
+  font-size: 26px;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  position: absolute;
+  opacity: 0;
+  transition: 0.5s;
+
+}
+.layer:hover h3 {
+  bottom: 49%;
+  opacity: 1;
+}
+
+/*clinical services*/
+
+.Surgical-Services{
+  background-color: #f7f8f8;
+  top: 0;
+  margin-top: 0;
+  text-align: center;
+  height: 100%;
+  justify-content: left;
+}
+.Surgical-Services h1{
+  color: #040352;
+  margin-top: 0;
+  padding-top: 10px;
+  display: inline-block;
+  text-align: center;
+ 
+}
+.Surgical-Services h2{
+  color: #040352;
+}
+.plus{
+  cursor: pointer;
+  
+}
+/*bodies*/
+.Kibugua-body{
+  background-image:linear-gradient(rgba(3, 12, 48, 0.7), rgba(3, 14, 58, 0.7)), url(Photos/kibugua.jpg);
+  background-size:cover;
+  background-position:center;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-attachment: fixed;
+  width: 100%;
+  overflow-x: hidden;
+  background-color: white;
+  height: 100%;
+}
+.makima_body{
+  background-image:linear-gradient(rgba(3, 12, 48, 0.7), rgba(3, 14, 58, 0.7)), url(Photos/makima.jpeg);
+  background-size:cover;
+  background-position:center;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-attachment: fixed;
+  width: 100%;
+  overflow-x: hidden;
+  background-color: white;
+  height: 100%;
+}
+
+
+/*media query */
+@media(max-width: 700px){
+  .Surgical-Services{
+    background-color: #f7f8f8;
+    top: 0;
+    margin-top: 0;
+    text-align: center;
+    height: 100%;
+    justify-content: left;
+    display: block;
+  }
+}

@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book An Appointment</title>
+    <link rel="stylesheet" href="Appointment form.css">
+    <link rel="stylesheet" href="fidenza.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="https://kit.fontawesome.com/4b611f40c0.js" crossorigin="anonymous"></script>
+</head>
+<body class="fidenza_body">
+ 
+   <!-- Nav Bar Code and Drop down Menu-->
+
+   <nav class="nav-links">
+    <input type="checkbox" id="check">
+    <label for="check" class="checkbtn">
+      <i class="fa-solid fa-bars" style="color: #000361;"></i>
+    </label> 
+   
+    <ul class="navbar">
+        <li><a href="CHK HTML.html">Home</a></li>
+        <!--Dropdown menu (About Dropdown menu)-->
+        <li class="dropdown">
+          <a href="About page.html">About</a>
+          <ul class="dropdown-menu">
+            <li class="drop2">
+              <a href="#">Management</a>
+              <ul class="drop-2">
+                <li><a href="#">B.O.G</a></li>
+                <li><a href="#">Health Management</a></li>
+              
+               
+              </ul>
+            </li>
+            <li class="drop2">
+            
+              <ul class="drop-2">
+                  <li><a href="Clinical Services.html" target="_blank">Clinical Services</a></li>
+                  <li><a href="#">Coporate services</a></li>
+              </ul>
+          </li>
+           
+            <!--nested dropdown menu-->
+           
+          </li>
+            <li><a href="careers.html" target="_blank">Careers</a></li>
+           
+          </ul>
+        </li>
+        <!--Our Services dropdown menu-->
+        <li class="dropdown">
+          <a href="Clinical Services.html" target="_blank">Our Services</a>
+         
+        </li>
+<!--Projects dropdown menu-->
+        <li class="dropdown">
+          <a href="Projects.html">Projects</a>
+       
+        </li>
+         <!--Branches dropdown menu-->
+         <li class="dropdown">
+          <a href="#">Branches</a>
+          <ul class="dropdown-menu">
+            <li><a href="Kibugua Branch.html" target="_blank">Kibugua</a></li>
+            <li><a href="Makima.html" target="_blank">Makima</a></li>
+           
+          </ul>
+        </li>
+        <!--Media Center dropdown menu-->
+        <li class="dropdown">
+          <a href="media center.html" target="_blank">Media Center</a>
+          <ul class="dropdown-menu">
+            <li><a href="#news">Newsline</a></li>
+            <li><a href="#blog">Gallery</a></li>
+            <li><a href="#gallery">Blog</a></li>
+       
+          </ul>
+        </li>
+         <!--downloads dropdown menu-->
+         <li class="dropdown">
+          <a href="#">Downloads</a>
+          <ul class="dropdown-menu">
+            <li><a href="careers.html">Application Letter</a></li>
+            <li><a href="tenders.html" target="_blank">Tenders</a></li>
+            <li><a href="Doctors Center.html">Appointments</a></li>
+          </ul>
+        </li>
+          <!--Fidenza dropdown menu-->
+          <li class="dropdown">
+              <a href="Fidenza School of Nursing.html" target="_blank">Fidenza</a>
+              <ul class="dropdown-menu">
+                <li><a href="Fidenza School of Nursing.html" target="_blank">Application Letter</a></li>
+                <li><a href="Fidenza School of Nursing.html" target="_blank">Management</a></li>
+                <li><a href="Fidenza School of Nursing.html" target="_blank">School Gallery</a></li>
+              </ul>
+            </li>
+            
+        <!--contact us dropdown menu-->
+        <li class="dropdown">
+          <a href="#">Contact Us</a>
+          <ul class="dropdown-menu">
+            <li><a href="FAQ.html" target="_blank">Frequently asked questions</a></li>
+            <li><a href="Report corruption.html" target="_blank">Report Corruption</a></li>
+            <li><a href="contact.html" target="_blank">Contact Us</a></li>
+            
+            <li><a href="comments.html" target="_blank">Comment on Our Services</a></li>
+          </ul>
+        </li>
+       
+      </ul>
+      
+      
+    </nav>
+     <!--Section Home page-->
+ <Section>
+
+
+  <div class="container">
+    <h2>Book an Appointment</h2>
+    <form action="process_form.php" method="post">
+      <div class="form-group">
+        <label for="name">Full Name</label>
+        <input type="text" id="name" name="name" required>
+      </div>
+      <div class="form-group">
+        <label for="email">Email</label>
+        <input type="text" id="email" name="email" required>
+      </div>
+      <div class="form-group">
+        <label for="department">Department</label>
+        <select id="department" name="department">
+          <option value="cardiology">Cardiology</option>
+          <option value="neurology">Neurology</option>
+          <option value="orthopedics">Orthopedics</option>
+          <option value="oncology">Oncology</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="date">Preferred Date</label>
+        <input type="text" id="date" name="date" placeholder="YYYY-MM-DD" required>
+      </div>
+      <button type="submit">Book Appointment</button>
+    </form>
+  </div>
+
+ </Section>
+    
+   
+   <!-- footer -->
+   <section class="footer" >
+    <div class="contact_footer">
+    <h4>Contact Us</h4>
+    <p>
+      The Managing Director,
+    </p>
+    <p>
+      Consolata Hospital Kyeni,
+    </p>
+    <p>
+      P.O box ************ Runyenjes,
+    </p>
+    <p>
+    Tel ************,**********
+    </p>
+    <p>
+      Email: kyeni@yahoo.com,
+    </p>
+  </div>
+
+
+  <div class="contact_footer">
+    <h4>Quick Links</h4>
+    <p>
+     Fidenza School of Nursing
+    </p>
+    <p>
+      Careers
+    </p>
+    <p>
+     Tenders
+    </p>
+    <p>
+     ************,**********
+    </p>
+    <p>
+    ***********************
+    </p>
+  </div>
+
+  <div class="contact_footer">
+    <h4>External Links</h4>
+    <p>
+     Fidenza School of Nursing
+    </p>
+    <p>
+      Careers
+    </p>
+    <p>
+     Tenders
+    </p>
+    <p>
+     ************,**********
+    </p>
+    <p>
+    ***********************
+    </p>
+  </div>
+ <p>Made by Richie Arts films for Consolata Hospital Kyeni</p>
+ <p>@2023 CHK All Rights Reserved</p>
+</section>
+
+  
+
+
+</body>
+</html>

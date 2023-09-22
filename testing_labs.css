@@ -1,0 +1,55 @@
+/* Styles for the navigation bar */
+.nav-links {
+  background-color: #2610eb;
+  color: #fff;
+  overflow: hidden;
+}
+
+.navbar {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+}
+
+.navbar li {
+  float: left;
+}
+
+.navbar li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Style for the responsive menu icon */
+.checkbtn {
+  font-size: 30px;
+  color: white;
+  display: none;
+  cursor: pointer;
+}
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+  .navbar {
+      display: none;
+      width: 100%;
+      text-align: center;
+  }
+
+  .navbar.active {
+      display: block;
+  }
+
+  .navbar li {
+      display: block;
+      clear: both;
+  }
+
+  .checkbtn {
+      display: block;
+  }
+}
